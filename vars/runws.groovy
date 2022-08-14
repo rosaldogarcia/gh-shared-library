@@ -1,4 +1,4 @@
 def call(x,y) {
     loadLinuxScript(name: 'hello-world.sh')
-    sh "./hello-world.sh true false"
+    sh "./hello-world.sh true true"
 }
