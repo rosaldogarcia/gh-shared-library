@@ -1,7 +1,7 @@
-def info(message) {
+def js(message) {
     echo "rossjs: ${message}"
 }
 
-def warning(message) {
+def converters(message) {
     echo "rossconverters: ${message}"
 }
