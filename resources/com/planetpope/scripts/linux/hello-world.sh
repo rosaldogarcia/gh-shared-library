@@ -1,5 +1,14 @@
 #!/bin/bash
 # echo Hello $1. Today is $2.
-echo rosettajs $1
-echo rosettaconverters $2
-echo others $3
+
+
+rossjs=$1
+if [ "$rossjs" = true ]; then
+  echo "process the script for rossjs"
+fi
+
+rossconverters=$2
+if [ "$rossconverters" = true ]; then
+  echo "process the script for rossconverters"
+fi
+
