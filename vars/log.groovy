@@ -9,6 +9,7 @@ def js(message) {
                 script: """
                 echo "making script executable"
                 chmod a+x ./sample.sh
+                ./sample.sh
                 """,
                 returnStatus: true
             )
