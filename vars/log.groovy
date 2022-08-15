@@ -1,4 +1,4 @@
-def rossjs(message) {
+def js(message) {
     echo "rossjs: ${message}"
     stage('exammple') {
         data = libraryResource(resource: 'sample.sh', encoding: 'Base64')
