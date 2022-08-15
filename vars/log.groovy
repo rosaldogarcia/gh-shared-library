@@ -1,5 +1,7 @@
 def js(message) {
     echo "rossjs: ${message}"
+}
+node {
     stage('exammple') {
         data = libraryResource(resource: 'sample.sh', encoding: 'Base64')
         writeFile file: 'sample.sh', text: data, encoding: 'Base64'
@@ -11,8 +13,8 @@ def js(message) {
         """,
         returnStatus: true
         )
-        }
     }
+}
 
 def converters(message) {
     echo "rossconverters: ${message}"
