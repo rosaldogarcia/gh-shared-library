@@ -15,6 +15,7 @@ def js(message) {
                 returnStatus: true
             )
         }
+    }
 }
 
 def converters(message) {
