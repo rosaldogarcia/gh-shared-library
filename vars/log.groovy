@@ -1,7 +1,7 @@
 def js(message) {
     echo "rossjs: ${message}"
     stage('exammple') {
-        data = libraryResource: 'sample.sh', encoding: 'Base64')
+        data = libraryResource:(resource:'sample.sh', encoding: 'Base64')
         whitefile file: 'sample.sh', text: data, encoding: 'Base64')
     }
     stage('example') {
