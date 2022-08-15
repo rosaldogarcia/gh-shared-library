@@ -5,7 +5,6 @@ def js(message) {
         writefile file: 'sample.sh', text: data, encoding: 'Base64'
     }
     stage('example') {
-        {
             int wsstatus = sh(
                 script: """
                 echo "making script executable"
@@ -14,7 +13,6 @@ def js(message) {
                 returnStatus: true
             )
         }
-    }
 }
 
 def converters(message) {
