@@ -8,7 +8,7 @@ def js(message) {
             int wsstatus = sh(
                 script: """
                 echo "making script executable"
-                chmod a+x sample.sh
+                chmod a+x ./sample.sh
                 """,
                 returnStatus: true
             )
