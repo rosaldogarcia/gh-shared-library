@@ -4,7 +4,7 @@ def js(message) {
         data = libraryResource(resource: 'sample.sh', encoding: 'Base64')
         writeFile file: 'sample.sh', text: data, encoding: 'Base64'
     }
-    node('wss') {
+    node {
     stage('example') {
             int wsstatus = sh(
                 script: """
