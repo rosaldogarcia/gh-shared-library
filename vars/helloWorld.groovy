@@ -6,10 +6,10 @@
 //     sh "echo Hello ${name}. Today is ${dayOfWeek}."
 // }
 
-// def call{
-//     sh "echo Hello World"
-// }
+ def call{
+     sh "echo Hello World"
+ }
 
-def call(Map config = [:]) {
+//def call(Map config = [:]) {
     sh "echo Hello ${config.name}. Today is ${config.dayOfWeek}."
-}
+//}
